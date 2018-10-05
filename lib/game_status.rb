@@ -37,6 +37,8 @@ def over?(board)
 end  
 
 def winner(board)
-  "X" won?(board) || "O" won?(board)
-  
+  "X" || "O" |player|
+  player.won(board)
+  return player
+end
 end  
