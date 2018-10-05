@@ -37,8 +37,8 @@ def over?(board)
 end  
 
 def winner(board)
-  "X" || "O" |player|
-  player.won(board)
-  return player
-end
-end  
+   winning_combination = won?(board) 
+    if winning_combination
+      return board[winning_combination[0]]
+    end
+end   
